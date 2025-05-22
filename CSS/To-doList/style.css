@@ -1,0 +1,44 @@
+body{
+   background-color: rgb(234, 212, 184);
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-container{
+    margin-top: 30px;
+    width: 450px;
+    background-color: rgb(244, 249, 247);
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgb(96, 95, 95);
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.todo-item {
+    background-color: #def0df; 
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    /* display: flex; */
+    align-items: center;
+    gap: 10px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 16px rgb(204, 203, 203);
+    padding-bottom: 20px;
+}
+
+.todo-item a {
+    display: block;
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
