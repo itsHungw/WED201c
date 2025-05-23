@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.collum{
+    margin: 0 10px;
+    flex: 1;
+}
+
+h2{
+    text-align: center;
+}
+.collum li{
+    margin-left: -20px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.card{
+    width: 600px;
+    background-color: white;
+    margin: auto;
+}
+hr{
+    border: solid black 2px;
+}
+
+
+footer{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
