@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Job Application Form</h1>
+        <form action="post">
+            <div class="info">
+                <label for="name"><strong> Full nam</strong>e</label>
+                <br>
+                <input class="box" type="text" name="name" id="name" placeholder="Enter your name" required>
+                <br>
+
+                <label for="email"><strong>Email</strong></label>
+                <br>
+                <input class="box" type="email" name="email" id="email" required placeholder="Enter your Email">
+                <br>
+
+                <label for="position"><strong>Position</strong></label>
+                <br>
+                <select required class="box">
+                    <option value="" selected  >Select position</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Manager">Manager</option>
+                </select>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Availability</legend>
+                    
+                    <input class="choice" type="radio" id="full-time" name="availabiliity" value="full-time">
+                    <label for="full-time">Full-Time</label>
+
+                    <input class="choice" type="radio" id="part-time" name="availabiliity" value="part-time">
+                    <label for="part-time">Part-Time</label>
+                </fieldset>
+                <label for="motivation">Why do you want this job?</label><br>
+                <textarea class="box" required name="motivation" id="motivation" placeholder="Write your motivation"></textarea>
+            </div>
+
+            
+            <input class="submit" type="submit" value="Submit Application">
+        </form>
+    </div>
+</body>
+
+</html>
