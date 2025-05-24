@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(162, 223, 245);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container{
+    max-width: 300px;
+    background-color: rgb(252, 252, 250);
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+input, label{
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    margin: auto;
+    color: rgb(103, 102, 102);
+
+}
+input ,textarea{
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    border: rgb(208, 208, 208) solid 1px;
+    resize: vertical;
+}
+
+input[type="submit"]{
+    width: 100px;
+    background-color: rgb(58, 181, 70);
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+input[type="submit"]:hover{
+    background-color: green;
+}
+
+h1{
+    font-size: 25px;
+}
