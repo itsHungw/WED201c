@@ -1,35 +1,35 @@
 # 🎨 Web Design Learning
 
-Repository lưu trữ quá trình học web design của tôi.
+Repository for storing my web design learning journey.
 
-## 📚 Đang học gì?
+## 📚 What I'm Learning?
 
-- ✅ **HTML** - Hoàn thành
-- ✅ **CSS** - Hoàn thành  
-- 🔄 **JavaScript** - Đang học
+- ✅ **HTML** - Completed
+- ✅ **CSS** - Completed  
+- 🔄 **JavaScript** - Currently Learning
 
-<!--## 📁 Cấu trúc thư mục
+<!--## 📁 Folder Structure
 
 ```
-📦 Repo này
-├── 📂 HTML/          # Bài tập HTML
-├── 📂 CSS/           # Bài tập CSS
-├── 📂 JavaScript/    # Bài tập JS
-└── 📂 Projects/      # Các dự án nhỏ
+📦 This Repo
+├── 📂 HTML/          # HTML exercises
+├── 📂 CSS/           # CSS exercises
+├── 📂 JavaScript/    # JavaScript exercises
+└── 📂 Projects/      # Small projects
 ```-->
 
-## 💻 Công nghệ sử dụng
+## 💻 Technologies Used
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-## 🎯 Mục tiêu
+## 🎯 Goals
 
-- Làm chủ HTML, CSS, JavaScript
-- Xây dựng website responsive
-- Học framework (React, Vue...)
+- Master HTML, CSS, JavaScript
+- Build responsive websites
+- Learn frameworks (React, Vue...)
 
 ---
 
-💡 **Ghi chú**: Đây là repo cá nhân để lưu quá trình học tập tại FPT University.
+💡 **Note**: This is my personal repo for documenting my learning process at FPT University.
