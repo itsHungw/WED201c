@@ -243,13 +243,13 @@ html {
     margin-bottom: 30px;
 }
 
-.place-list a{
+.place-list button{
     text-decoration: none;
     background-color: black;
     color: #fff;
     padding: 10px 16px;
 }
-.place-list a:hover{
+.place-list button:hover{
     background-color: gray;
     color: black;
 }
@@ -260,3 +260,92 @@ html {
 
 
 #footer {}
+
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.modal .modal-container{
+    width: 900px;
+    background-color: #fff;
+    min-height: 400px;
+    position: relative;
+    animation: SlidePayPage ease 0.5s;
+}
+
+.modal-header {
+    background-color: #009688;
+    padding: 32px 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    
+}
+i.ti-close {
+    float: right;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 24px !important;
+}
+i.ti-close:hover {
+    background-color: rgb(134, 132, 132);
+    color: black;
+    
+}
+.modal-body {
+    padding: 16px;
+}
+.modal-label {
+    display: block;
+}
+
+.input-modal{
+    margin: 12px 0;
+    width: 100%;
+    padding: 10px;
+    border: #939090 1px solid;
+}
+button#pay-button {
+    background-color: #009688;
+    width: 100%;
+    border: 3px;
+    padding: 12px 0;
+    color: #fff;
+    font-weight: 700;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+#pay-button:hover {
+    background-color: #ccc;
+    color: black;
+}
+.modal-footer {
+    float: right;
+    margin: 30px 22px;
+}
+.modal.open{
+    display: flex;
+}
+
+@keyframes SlidePayPage {
+    from{
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

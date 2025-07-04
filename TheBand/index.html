@@ -90,7 +90,7 @@
                                 <h3 class="place-header">New York</h3>
                                 <p class="tour-date">Fri 27 Nov 2016</p>
                                 <p class="place-descib">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-tickets">Buy Tickets</a>
+                                <button class="buy-tickets js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -99,7 +99,7 @@
                                 <h3 class="place-header">Paris</h3>
                                 <p class="tour-date">Sat 28 Nov 2016</p>
                                 <p class="place-descib">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-tickets">Buy Tickets</a>
+                                <button class="buy-tickets js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -108,7 +108,7 @@
                                 <h3 class="place-header">San Francisco</h3>
                                 <p class="tour-date">Sun 29 Nov 2016</p>
                                 <p class="place-descib">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="buy-tickets">Buy Tickets</a>
+                                <button class="buy-tickets js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -127,6 +127,59 @@
 
         </div>
     </div>
+
+    <div class="modal open">
+        <div class="modal-container js-modal-container">
+            
+            <div class="modal-header">
+                <i class="ti-briefcase"></i>
+                Tickets
+                <i class="ti-close js-modal-close"></i>
+            </div>
+
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="quantity" class="input-modal" placeholder="How many?">
+
+                <label for="email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send To
+                </label>
+                <input type="email" id="email" class="input-modal" placeholder="Enter Email">
+                <button id="pay-button">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+
+            <div class="modal-footer">
+                Need <a href="#" class="help-link">help?</a>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script>
+    const buyBtns = document.querySelectorAll('.js-buy-ticket')
+    const modal = document.querySelector('.modal')
+    const modalContainer = document.querySelector('.js-modal-container')
+    const modalClose = document.querySelector('.js-modal-close')
+
+    function showBuyTickets(){
+        modal.classList.add('open')
+    }
+
+    function hideBuyTickets(){
+        modal.classList.remove('open')
+    }
+
+    for(const buyBtn of buyBtns){
+        buyBtn.addEventListener('click', showBuyTickets)
+    }
+    modalClose.addEventListener('click', hideBuyTickets)
+</script>
 
 </html>
