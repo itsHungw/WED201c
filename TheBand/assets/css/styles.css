@@ -34,6 +34,11 @@
     width: 100%;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
 
 
 /* header */
@@ -47,10 +52,6 @@
     right: 0;
 }
 
-html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
 
 #nav {
     display: inline-block;
