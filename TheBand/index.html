@@ -53,16 +53,16 @@
                     est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
-                <div class="members">
-                    <div class="member">
+                <div class="members row">
+                    <div class="member col col-3 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/bandmember.jpg" alt="Member" class="member-image">
                     </div>
-                    <div class="member">
+                    <div class="member col col-3 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/bandmember.jpg" alt="Member" class="member-image">
                     </div>
-                    <div class="member">
+                    <div class="member col col-3 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/bandmember.jpg" alt="Member" class="member-image">
                     </div>
@@ -75,16 +75,16 @@
                     <h2 class="section-heading">TOUR DATES</h2>
                     <p class="section-sub-heading">Remember to book your tickets!</p>
                     <br>
-                    <!--Ticket List-->
+<!--Ticket List-->
                     <ul class="list-tour">
                         <li>September <span class="sold-out">Sold out</span></li>
                         <li>October <span class="sold-out">Sold out</span></li>
                         <li>November <span class="quantity">3</span></li>
                     </ul>
 
-                    <!--Place List-->
-                    <div class="place-list">
-                        <div class="place-item">
+<!--Place List-->
+                    <div class="place-list row">
+                        <div class="place-item col col-3">
                             <img src="assets/image/places/newyork.jpg" alt="New York">
                             <div class="tour-detail">
                                 <h3 class="place-header">New York</h3>
@@ -93,7 +93,7 @@
                                 <button class="buy-tickets js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item col col-3">
                             <img src="assets/image/places/paris.jpg" alt="Paris">
                             <div class="tour-detail">
                                 <h3 class="place-header">Paris</h3>
@@ -102,7 +102,7 @@
                                 <button class="buy-tickets js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item col col-3">
                             <img src="assets/image/places/sanfran.jpg" alt="San-Francisco">
                             <div class="tour-detail">
                                 <h3 class="place-header">San Francisco</h3>
@@ -116,67 +116,118 @@
                 </div>
             </div>
 
-
-            <div class="content-section">
+<!-- Contact Section -->
+            <div class="content-section" id="contact">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                <div class="contact-section">
+                    <div class="row">
+                        <div class="col col-2">
+                            <p><i class="ti-location-pin"></i> Chicago, US</p>
+                            <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+                            <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                        </div>
+
+                        <div class="col col-2">
+                            <form action="" autocomplete="off">
+                                <div class="row">
+                                    <div class="col col-2">
+                                        <input type="text" id="name" class="input-text" placeholder="Name" 
+                                            required>
+                                    </div>
+                                    <div class="col col-2">
+                                        <input type="text" id="phone" class="input-text" placeholder="Phone"
+                                            required>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="row-full">
+                                    <input type="text" id="message" class="input-text message" placeholder="Message"
+                                        required>
+                                </div>
+                                <input type="submit" value="SEND" class="input-submit">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+<!-- Footer Section -->
+            <div id="map">
+                <img src="assets/image/map.jpg" alt="Map" style="width: 100%; filter: grayscale(50%);">
+            </div>
+
+            <div id="footer">
+                <div class="social">
+                    <i class="ti-facebook"></i>
+                    <i class="ti-twitter"></i>
+                    <i class="ti-instagram"></i>
+                    <i class="ti-pinterest"></i>
+                    <i class="ti-linkedin"></i>
+                </div>
+
+                <div class="copyright">
+                    <p>Powered by <a href="">w3.css</a></p>
+                </div>
             </div>
         </div>
 
-        <div id="footer">
 
+
+
+        <div class="modal ">
+            <div class="modal-container js-modal-container">
+
+                <div class="modal-header">
+                    <i class="ti-briefcase"></i>
+                    Tickets
+                    <i class="ti-close js-modal-close"></i>
+                </div>
+
+                <div class="modal-body">
+                    <label for="quantity" class="modal-label">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input type="text" id="quantity" class="input-modal" placeholder="How many?">
+
+                    <label for="email" class="modal-label">
+                        <i class="ti-user"></i>
+                        Send To
+                    </label>
+                    <input type="email" id="email" class="input-modal" placeholder="Enter Email">
+                    <button id="pay-button">
+                        Pay
+                        <i class="ti-check"></i>
+                    </button>
+                </div>
+
+                <div class="modal-footer">
+                    Need <a href="#" class="help-link">help?</a>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="modal open">
-        <div class="modal-container js-modal-container">
-            
-            <div class="modal-header">
-                <i class="ti-briefcase"></i>
-                Tickets
-                <i class="ti-close js-modal-close"></i>
-            </div>
-
-            <div class="modal-body">
-                <label for="quantity" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input type="text" id="quantity" class="input-modal" placeholder="How many?">
-
-                <label for="email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send To
-                </label>
-                <input type="email" id="email" class="input-modal" placeholder="Enter Email">
-                <button id="pay-button">
-                    Pay
-                    <i class="ti-check"></i>
-                </button>
-            </div>
-
-            <div class="modal-footer">
-                Need <a href="#" class="help-link">help?</a>
-            </div>
-        </div>
-    </div>
 </body>
 
 <script>
     const buyBtns = document.querySelectorAll('.js-buy-ticket')
     const modal = document.querySelector('.modal')
-    const modalContainer = document.querySelector('.js-modal-container')
+    //const modalContainer = document.querySelector('.js-modal-container')
     const modalClose = document.querySelector('.js-modal-close')
 
-    function showBuyTickets(){
+    function showBuyTickets() {
         modal.classList.add('open')
     }
 
-    function hideBuyTickets(){
+    function hideBuyTickets() {
         modal.classList.remove('open')
     }
 
-    for(const buyBtn of buyBtns){
+    for (const buyBtn of buyBtns) {
         buyBtn.addEventListener('click', showBuyTickets)
     }
     modalClose.addEventListener('click', hideBuyTickets)
