@@ -1,0 +1,32 @@
+@media (max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #nav li {
+        display: block;
+    }
+    #nav .subnav {
+        position: initial;
+    }
+    #nav>li:first-child {
+        display: inline-block;
+    }
+
+    #search-icon {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+
+    }
+    .s-col-full ,
+    .s-full-width {
+        width: 100%;
+    }
+    
+    .input-text {
+        padding-left: 20px;
+    }
+}

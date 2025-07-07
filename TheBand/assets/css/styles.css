@@ -39,7 +39,9 @@ html {
     font-size: 15px;
     scroll-behavior: smooth;
 }
-
+.mt-16{
+    margin-top: 16px;
+}
 
 /* header */
 #header {
@@ -54,7 +56,7 @@ html {
 
 
 #nav {
-    display: inline-block;
+    display: block;
 }
 
 #nav li a {
@@ -62,7 +64,7 @@ html {
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
-    display: inline-block;
+    display: block;
 }
 
 #nav li {
@@ -79,7 +81,7 @@ html {
 }
 
 #nav .subnav li:hover a,
-#nav>li:hover>a {
+#nav>li:hover>a{
     background-color: gray;
     color: black;
 }
@@ -102,18 +104,32 @@ html {
     color: black;
     padding-left: 12px;
     line-height: 40px;
+    
 }
-
+.menu-icon,
 #search-icon {
     float: right;
     color: white;
     line-height: 46px;
     padding: 0 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
+.menu-icon{
+    display: none;
+}
 #search-icon:hover {
     background-color: red;
 }
+.menu-icon:hover {
+    background-color: gray;
+    color: black;
+    
+}
+
+
 
 /* header */
 
@@ -149,6 +165,7 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;

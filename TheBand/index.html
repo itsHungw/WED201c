@@ -7,6 +7,7 @@
     <title>The Band</title>
     <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/favicon.ico">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 
@@ -19,7 +20,7 @@
                 <li><a href="#tour">TOUR</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         MORE
                         <i class="ti-angle-down"></i>
                     </a>
@@ -33,6 +34,11 @@
             <div id="search-icon">
                 <i class="ti-search"></i>
             </div>
+
+            <div id="mobile-menu-icon" class="menu-icon">
+                <i class="ti-menu"></i>
+            </div>
+
         </div>
 
         <div id="slider">
@@ -42,7 +48,7 @@
             </div>
         </div>
 
-<!-- THE BAND MEMBERS -->
+        <!-- THE BAND MEMBERS -->
         <div id="content">
             <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
@@ -56,62 +62,61 @@
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
                 <div class="members row">
-                    <div class="member col col-3 text-center">
+                    <div class="member s-col-full col col-3 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/bandmember.jpg" alt="Member" class="member-image">
                     </div>
-                    <div class="member col col-3 text-center">
+                    <div class="member s-col-full col col-3 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/bandmember.jpg" alt="Member" class="member-image">
                     </div>
-                    <div class="member col col-3 text-center">
+                    <div class="member s-col-full col col-3 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/bandmember.jpg" alt="Member" class="member-image">
                     </div>
                     <div class="clear"></div>
                 </div>
-            </div>
-
-<!-- Tour Section -->
+            </div> 
+            <!-- Tour Section -->
             <div id="tour">
                 <div class="content-section">
                     <h2 class="section-heading">TOUR DATES</h2>
                     <p class="section-sub-heading">Remember to book your tickets!</p>
                     <br>
-<!--Ticket List-->
+                    <!--Ticket List-->
                     <ul class="list-tour">
                         <li>September <span class="sold-out">Sold out</span></li>
                         <li>October <span class="sold-out">Sold out</span></li>
                         <li>November <span class="quantity">3</span></li>
                     </ul>
 
-<!--Place List-->
+                    <!--Place List-->
                     <div class="place-list row">
-                        <div class="place-item col col-3">
+                        <div class="place-item s-col-full mt-16 col col-3">
                             <img src="assets/image/places/newyork.jpg" alt="New York">
                             <div class="tour-detail">
                                 <h3 class="place-header">New York</h3>
                                 <p class="tour-date">Fri 27 Nov 2016</p>
                                 <p class="place-descib">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-tickets js-buy-ticket">Buy Tickets</button>
+                                <button class="buy-tickets js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place-item col col-3">
+                        <div class="place-item s-col-full mt-16 col col-3">
                             <img src="assets/image/places/paris.jpg" alt="Paris">
                             <div class="tour-detail">
                                 <h3 class="place-header">Paris</h3>
                                 <p class="tour-date">Sat 28 Nov 2016</p>
                                 <p class="place-descib">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-tickets js-buy-ticket">Buy Tickets</button>
+                                <button class="buy-tickets js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="place-item col col-3">
+                        <div class="place-item s-col-full mt-16 col col-3">
                             <img src="assets/image/places/sanfran.jpg" alt="San-Francisco">
                             <div class="tour-detail">
                                 <h3 class="place-header">San Francisco</h3>
                                 <p class="tour-date">Sun 29 Nov 2016</p>
                                 <p class="place-descib">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-tickets js-buy-ticket">Buy Tickets</button>
+                                <button class="buy-tickets js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -119,38 +124,36 @@
                 </div>
             </div>
 
-<!-- Contact Section -->
+            <!-- Contact Section -->
             <div class="content-section" id="contact">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
 
                 <div class="contact-section">
                     <div class="row">
-                        <div class="col col-2">
+                        <div class="col s-col-full col-2  mt-16">
                             <p><i class="ti-location-pin"></i> Chicago, US</p>
                             <p><i class="ti-mobile"></i> Phone: +00 151515</p>
                             <p><i class="ti-email"></i> Email: mail@mail.com</p>
                         </div>
 
-                        <div class="col col-2">
+                        <div class="col s-col-full col-2 mt-16">
                             <form action="" autocomplete="off">
                                 <div class="row">
-                                    <div class="col col-2">
-                                        <input type="text" id="name" class="input-text" placeholder="Name" 
-                                            required>
+                                    <div class="col col-2 s-col-full">
+                                        <input type="text" id="name" class="input-text" placeholder="Name" required>
                                     </div>
-                                    <div class="col col-2">
-                                        <input type="text" id="phone" class="input-text" placeholder="Phone"
-                                            required>
+                                    <div class="col col-2 s-col-full">
+                                        <input type="text" id="phone" class="input-text" placeholder="Phone" required>
                                     </div>
                                 </div>
-                                
+
 
                                 <div class="row-full">
                                     <input type="text" id="message" class="input-text message" placeholder="Message"
                                         required>
                                 </div>
-                                <input type="submit" value="SEND" class="input-submit">
+                                <input type="submit" value="SEND" class="input-submit s-full-width">
                             </form>
                         </div>
 
@@ -159,7 +162,7 @@
             </div>
 
 
-<!-- Footer Section -->
+            <!-- Footer Section -->
             <div id="map">
                 <img src="assets/image/map.jpg" alt="Map" style="width: 100%; filter: grayscale(50%);">
             </div>
@@ -214,6 +217,36 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            var header = document.getElementById("header");
+            var mobileMenu = document.getElementById("mobile-menu-icon");
+            var headerHeight = header.clientHeight;
+
+            mobileMenu.onclick = function () {
+                var isClosed = header.clientHeight === headerHeight;
+                if (isClosed) {
+                    header.style.height = "auto";
+                } else {
+                    header.style.height = null;
+                }
+            }
+
+            var navItems = document.querySelectorAll("#nav li a");
+            for (var i = 0; i < navItems.length; i++) {
+                var navItem = navItems[i];
+                navItem.onclick = function (event) {
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    if (isParentMenu) {
+                        event.preventDefault();
+                    }
+                    else {
+                        header.style.height = null;
+                    }
+                }
+            }
+
+        </script>
 </body>
 
 <script>
