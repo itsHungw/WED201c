@@ -4,7 +4,7 @@ Repository for storing my web design learning journey.
 
 ## 📚 What I'm Learning?
 
-- ✅ ** BASIC HTML** - Completed
+- ✅ **BASIC HTML** - Completed
 - ✅ **BASIC CSS** - Completed  
 - 🔄 **JavaScript** - Currently Learning
 
