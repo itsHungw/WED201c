@@ -1,0 +1,129 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#header img {
+    height: auto;
+    width: 120px;
+}
+
+#header .menu {
+    display: block;
+}
+
+#header .menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#header .menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#header .menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(9, 195, 195);
+}
+
+#header button {
+    background-color: black;
+    color: white;
+}
+
+/* Banner */
+#banner {
+    display: flex;
+    justify-content: center;
+
+}
+
+#banner img {
+    width: 45%;
+    height: auto;
+    display: block;
+}
+
+#detail {}
+
+#detail h1 {
+    text-align: center;
+    color: rgb(9, 195, 195);
+}
+
+#detail p {
+    font-style: italic;
+    color: orange;
+    font-weight: 600;
+    text-align: justify;
+}
+
+/* tour */
+.tour {
+    display: flex;
+    justify-content: center;
+}
+
+.tour h1 {
+    background-color: rgb(22, 132, 175);
+    margin-bottom: 0px;
+}
+
+ .select-tour{
+    display: flex;
+    flex-direction: row;
+}
+.tour .form-example{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tour label {
+    min-width: 150px;
+}
+
+.tour .btn-book {
+    text-align: center;
+    margin: auto;
+    width: 15%;
+    padding: 15px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.tour .tour-content {
+    background-color: rgb(206, 193, 193);
+}
+
+.tour .total-amount {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: green;
+}
+
+/* Footer */
+#footer {
+    background-color: rgb(4, 148, 192);
+    color: white;
+    margin: -8px;
+}
+
+#footer-detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer h5 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 40px 0;
+}

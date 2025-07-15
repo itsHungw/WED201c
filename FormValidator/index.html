@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="acess/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="" method="post" class="form" id="form-1">
+
+            <h1>Thành viên đăng kí</h1>
+            <p>Cùng nhau học lập trình miễn phí</p>
+
+            <div class="form-group">
+                <label for="">Full name:</label>
+                <input type="text" name="full-name" id="full-name" placeholder="Nguyen Vinh Hung" required>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="email@domain.com" required>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Pass word:</label>
+                <input type="password" name="password" id="password" placeholder="Enter password" required>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="">Enter password again:</label>
+                <input type="password" name="password" id="password-again" placeholder="Enter password" required>
+                <span class="form-message"></span>
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="acess/mycode.js"></script>
+
+    <script>
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#full-name','Please fill your full name!'),
+                Validator.isEmail('#email'),
+                Validator.isLength('#password', 8, 'Your password is at least 8 character!'),
+                Validator.isPasswordTheSame('#password-again', function(){
+                    return document.querySelector('#form-1 #password').value;
+                }, "Your password conformation is different with Your password above!")
+
+            ]
+        });
+    </script>
+</body>
+
+</html>
